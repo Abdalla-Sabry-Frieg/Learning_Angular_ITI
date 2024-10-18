@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "category 1"
+    },
+    {
+      "id": "2",
+      "name": "category 2"
+    },
+    {
+      "id": "3",
+      "name": "category 3"
+    },
+    {
+      "id": "4",
+      "name": "category 4"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "description": "description for product 1",
+      "price": 100,
+      "imageUrl": "/assets/images/fruite-item-5.jpg",
+      "catid": 1,
+      "Quantity": 5
+    },
+    {
+      "name": "Product 3 edit",
+      "price": 1500,
+      "Quantity": 8,
+      "description": "description for product 2 edit",
+      "imageUrl": "/assets/images/banner-fruits.jpg",
+      "catid": "2",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Product 4",
+      "description": "description for product 2",
+      "price": 150,
+      "imageUrl": " /assets/images/best-product-1.jpg",
+      "catid": 1,
+      "Quantity": 5
+    },
+    {
+      "id": "4",
+      "name": "Product 5",
+      "description": "description for product 2",
+      "price": 150,
+      "imageUrl": " /assets/images/best-product-3.jpg",
+      "catid": 2,
+      "Quantity": 5
+    },
+    {
+      "id": "4",
+      "name": "Product 5",
+      "description": "description for product 2",
+      "price": 150,
+      "imageUrl": " /assets/images/best-product-3.jpg",
+      "catid": 2,
+      "Quantity": 2
+    },
+    {
+      "id": "5",
+      "name": "Product 6",
+      "description": "description for product 2",
+      "price": 150,
+      "imageUrl": " /assets/images/best-product-4.jpg",
+      "catid": 2,
+      "Quantity": 5
+    },
+    {
+      "id": "6",
+      "name": "Product 7",
+      "description": "description for product 2",
+      "price": 150,
+      "imageUrl": " /assets/images/best-product-5.jpg",
+      "catid": 2,
+      "Quantity": 2
+    },
+    {
+      "id": "7",
+      "name": "Product 8",
+      "description": "description for product 2",
+      "price": 150,
+      "imageUrl": " /assets/images/best-product-6.jpg",
+      "catid": 3,
+      "Quantity": 6
+    },
+    {
+      "id": "8",
+      "name": "Product 9",
+      "description": "description for product 2",
+      "price": 150,
+      "imageUrl": " /assets/images/featur-1.jpg",
+      "catid": 3,
+      "Quantity": 5
+    },
+    {
+      "id": "9",
+      "name": "Product 2",
+      "description": "description for product 2",
+      "price": 150,
+      "imageUrl": " /assets/images/vegetable-item-2.jpg",
+      "catid": 4,
+      "Quantity": 1
+    },
+    {
+      "id": "10",
+      "name": "Product 10",
+      "description": "description for product 10",
+      "price": 200,
+      "imageUrl": " /assets/images/vegetable-item-5.jpg",
+      "catid": 4,
+      "Quantity": 5
+    },
+    {
+      "name": "edit",
+      "price": 10,
+      "Quantity": 1000,
+      "description": "mn nm edit",
+      "imageUrl": "C:\\fakepath\\What Is .NET Core1.jpg",
+      "catid": "1",
+      "id": "11"
+    }
+  ]
+}

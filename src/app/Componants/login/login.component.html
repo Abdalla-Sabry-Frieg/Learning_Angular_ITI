@@ -1,0 +1,13 @@
+<p>login works!</p>
+<div class="container-fluid row">
+  <div class="col-md-12">
+        <div class="d-flex justify-content-around">
+          <button class="btn btn-success" [disabled]="isUserLogged" (click)="login()">Login</button>
+          <button class="btn btn-danger" [disabled]="!isUserLogged" (click)="logout()">Logout</button>
+        </div>
+  </div>
+  <div class="card my-4">
+    <h2>the counter is : {{counter | async}}</h2>
+  </div>
+
+</div>

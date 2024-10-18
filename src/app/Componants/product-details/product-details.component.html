@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <!-- Product Card -->
+  <div class="card h-100" *ngIf="product ;else noProduct " >
+    <div class="row g-0">
+      <!-- Product Image -->
+      <div class="col-md-4">
+        <img [src]="product.imageUrl" class="img-fluid rounded-start" alt="{{product.name}}">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <!-- Product Name -->
+          <h5 class="card-title">{{ product.name }}</h5>
+          <h5 class="card-title">id : {{ product.id }}</h5>
+          <h5 class="card-title">catId:{{ product.catId }}</h5>
+
+          <!-- Product Description -->
+          <p class="card-text">{{ product.description }}</p>
+          <!-- Product Price -->
+          <p class="card-text"><strong>Price:</strong> {{ product.price | currency }}</p>
+          <!-- Product Quantity -->
+          <p class="card-text"><strong>Quantity:</strong> {{ product.Quantity }}</p>
+          <!-- Product Total Price (if any) -->
+          <h5 class="card-text" *ngIf="totalPrice">Total Price: {{ totalPrice | currency }}</h5>
+          <!-- Buy Button -->
+           <input type="number" placeholder="Enter the numbers" #input>
+          <button class="btn btn-success" (click)="buyProduct(input.value  )">Buy Now</button>
+        </div>
+      </div>
+    </div>
+     <!-- Back Button -->
+   <div class="navigation-buttons mt-3 d-flex justify-content-between">
+      <button class="btn btn-primary" (click)="goBack()">All Products</button>
+      <button class="btn btn-primary" (click)="pervoius()">Pervuois Products</button>
+      <button class="btn btn-primary " (click)="next()">Next Products</button>
+
+  </div>
+</div>
+  </div>
+
+
+
+<ng-template #noProduct>
+  <div class="d-grid align-content-center justify-content-center m-5" style="background-color: brown;">
+      <h2 class="">No more Products !! </h2>
+  </div>
+</ng-template>
+
+
+

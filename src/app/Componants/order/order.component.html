@@ -1,0 +1,14 @@
+<!-- <h2>{{selectedCatId}}</h2> -->
+ <h2 class="text-center bg-secondary mt-3 rounded-3  text-light p-2">Total Price is : {{RecivedTotalPrice | currency}}</h2>
+<div class="mb-2 mt-3">
+  <select class="form-select" aria-label="Default select example"  [(ngModel)]="selectedCatId"  >
+
+    <option  value="0" selected >All category</option>
+    <option *ngFor="let category of categories" [value]="category.id" >{{category.name}}</option>
+  </select>
+
+</div>
+
+<app-products [categoryID]="selectedCatId"  (onTotalPriceChanges)="R_calculateTotalPrice($event)"></app-products>
+
+
